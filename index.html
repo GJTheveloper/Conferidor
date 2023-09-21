@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Conferidor de Apostas</title>
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+    <link href="./img/clover.png" rel="icon" type="image/x-icon" />
+  </head>
+  <body>
+    <header>
+      <h1>Conferidor de Apostas</h1>
+    </header>
+
+    <main id="main">
+      <section id="numerosInseridos">
+        <label for="sorteados">Sorteados:</label>
+        <input
+          type="text"
+          id="sorteados"
+          placeholder="Insira os números que foram sorteados"
+        />
+        <label for="lista">Lista de Apostas:</label>
+        <textarea
+          id="lista"
+          placeholder="Insira a lista de números apostados, separados por espaços"
+        ></textarea>
+        <div class="button-container">
+          <button id="conferir">Conferir</button>
+          <button id="limpar">Limpar</button>
+        </div>
+      </section>
+
+      <section id="resultados">
+        <section id="sectionRG">
+          <h2>Resultado Geral</h2>
+          <table id="tableRG">
+            <thead>
+              <tr>
+                <th>Pontos</th>
+                <th>Quantidade</th>
+              </tr>
+            </thead>
+            <tbody>
+              <!-- Os Resultado Gerais serão exibidos aqui -->
+            </tbody>
+          </table>
+        </section>
+
+        <section id="sectionRD">
+          <details id="detailsRD" close="">
+            <summary>Resultado Detalhado</summary>
+
+            <table id="tableRD">
+              <thead>
+                <tr>
+                  <th>Linha</th>
+                  <th>Números Inseridos</th>
+                  <th>Números Iguais</th>
+                  <th>Números Diferentes</th>
+                  <th>Quantidade de Acertos</th>
+                  <th>Quantidade de Erros</th>
+                </tr>
+              </thead>
+              <tbody>
+                <!-- Os Resultado Detalhados serão exibidos aqui -->
+              </tbody>
+            </table>
+          </details>
+        </section>
+      </section>
+    </main>
+
+    <footer>by GJ</footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
